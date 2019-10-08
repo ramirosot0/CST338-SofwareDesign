@@ -13,6 +13,16 @@ public abstract class Monster {
         this.items = items;
     }
 
+    int getHp(){return hp;}
+    void setHp(int hp){this.hp = hp;}
+    int getXp(){return xp;}
+    HashMap<String, Integer> getItems(){return items;}
+    void setItems(HashMap<String, Integer> items){this.items = items;}
+    int getMaxHp(){return maxHP;}
+    //boolean equals(Object object){}
+    //int hashCode(){}
+
+
     @Override
     public String toString() {
         return "hp=" + hp+"/"+maxHP;
