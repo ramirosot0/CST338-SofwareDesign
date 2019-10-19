@@ -1,4 +1,9 @@
-public class MeleeAttack implements Attack{
+package Abilities;
+
+import Abilities.Attack;
+import Monsters.Monster;
+
+public class MeleeAttack implements Attack {
     Monster attacker;
     public MeleeAttack(Monster attacker){
         this.attacker = attacker;
