@@ -13,7 +13,7 @@ public class RangedAttack implements Attack {
     public Integer attack(Monster target){
         String message = attacker + " use a Ranged attack on " + target;
         System.out.println(message);
-        return null;
+        return attacker.getAgi() - target.getAgi();
     }
 
 }

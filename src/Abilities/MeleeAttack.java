@@ -4,7 +4,9 @@ import Abilities.Attack;
 import Monsters.Monster;
 
 public class MeleeAttack implements Attack {
+
     Monster attacker;
+
     public MeleeAttack(Monster attacker){
         this.attacker = attacker;
     }
@@ -13,7 +15,7 @@ public class MeleeAttack implements Attack {
     public Integer attack(Monster target){
         String message = attacker + " use a melee attack on " + target;
         System.out.println(message);
-        return null;
+        return attacker.getStr() - target.getDef();
     }
 
 
